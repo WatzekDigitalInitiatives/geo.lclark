@@ -11,7 +11,7 @@ CARTODB_ONECLICK_LINK: 'http://oneclick.cartodb.com/'
 GEOMETRY_FIELD: 'solr_geom'
 
 # Institution deployed at
-INSTITUTION: 'Stanford'
+INSTITUTION: 'Lewis & Clark'
 
 # Metadata shown in tool panel
 METADATA_SHOWN:
