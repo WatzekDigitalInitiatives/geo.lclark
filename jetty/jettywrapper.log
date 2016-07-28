@@ -1,161 +1,127 @@
 0    [main] INFO  org.eclipse.jetty.server.Server  – jetty-8.1.10.v20130312
-29   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/ubuntu/geo.lclark/jetty/contexts at interval 0
-44   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/ubuntu/geo.lclark/jetty/contexts/solr.xml
-1265 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
-1382 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
-1415 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
-1416 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/ubuntu/geo.lclark/jetty/solr
-1416 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/ubuntu/geo.lclark/jetty/solr/'
-1417 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/geo.lclark/jetty/solr/lib/contrib/' to classloader
-1418 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/geo.lclark/jetty/solr/lib/solr-clustering-4.10.3.jar' to classloader
-1418 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/geo.lclark/jetty/solr/lib/solr-analysis-extras-4.10.3.jar' to classloader
-1418 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/geo.lclark/jetty/solr/lib/solr-langid-4.10.3.jar' to classloader
-1642 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/ubuntu/geo.lclark/jetty/solr/solr.xml
-1754 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/ubuntu/geo.lclark/jetty/solr
-1764 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 2045305690
-1765 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/ubuntu/geo.lclark/jetty/solr/]
-1771 [main] INFO  org.apache.solr.core.CoreContainer  – loading shared library: /home/ubuntu/geo.lclark/jetty/solr/lib
-1771 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/geo.lclark/jetty/solr/lib/contrib/' to classloader
-1771 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/geo.lclark/jetty/solr/lib/solr-clustering-4.10.3.jar' to classloader
-1772 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/geo.lclark/jetty/solr/lib/solr-analysis-extras-4.10.3.jar' to classloader
-1772 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/ubuntu/geo.lclark/jetty/solr/lib/solr-langid-4.10.3.jar' to classloader
-1793 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
-1793 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
-1797 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
-1797 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
-1797 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
-1797 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
-1798 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
-1798 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
-1798 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
-2022 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
-2029 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
-2030 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
-2031 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
-2073 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/ubuntu/geo.lclark/jetty/solr
-2080 [main] INFO  org.apache.solr.core.CoresLocator  – Found core blacklight-core in /home/ubuntu/geo.lclark/jetty/solr/blacklight-core/
-2081 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
-2083 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/'
-2214 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.7.0
-2478 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
-2500 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /home/ubuntu/geo.lclark/jetty/solr/blacklight-core/conf/schema.xml
-2567 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [blacklight-core] Schema name=geoblacklight-schema
-2782 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: uuid
-2876 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'blacklight-core' using configuration from instancedir /home/ubuntu/geo.lclark/jetty/solr/blacklight-core/
-2908 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.NRTCachingDirectoryFactory
-2914 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Opening new SolrCore at /home/ubuntu/geo.lclark/jetty/solr/blacklight-core/, dataDir=/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/data/
-2915 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – JMX monitoring not detected for core: blacklight-core
-2918 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=stanford}, {q=polygon}]}
-2918 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
-2933 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/ubuntu/geo.lclark/jetty/solr/blacklight-core/data
-2935 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/data/index/
-2936 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/ubuntu/geo.lclark/jetty/solr/blacklight-core/data/index
-3000 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
-3005 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
-3006 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
-3006 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
-3006 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
-3008 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /get: solr.RealTimeGetHandler
-3008 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.ReplicationHandler
-3009 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
-3011 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /search: solr.SearchHandler
-3012 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /select: solr.SearchHandler
-3013 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
-3013 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
-3014 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: solr.admin.AdminHandlers
-3016 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
-3016 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
-3016 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
-3046 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3051 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3052 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3052 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3053 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
-3074 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: if uncommited for 15000ms; 
-3074 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
-3099 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
-	commit{dir=NRTCachingDirectory(MMapDirectory@/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/data/index lockFactory=NativeFSLockFactory@/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
-3100 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
-3107 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@4cf7164a[blacklight-core] main
-3113 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /home/ubuntu/geo.lclark/jetty/solr/blacklight-core/conf
-3113 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/conf}
-3120 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/conf
-3123 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/conf
-3123 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
-3124 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
-3143 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@4cf7164a[blacklight-core] main{StandardDirectoryReader(segments_1:1:nrt)}
-3147 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: blacklight-core
-3155 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/ubuntu/geo.lclark/jetty
-3155 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
-3231 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
-3287 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=dct_isPartOf_sm,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-3301 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=dct_spatial_sm,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-3301 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=dc_creator_sm,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-3302 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=dc_subject_sm,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
-3307 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=null path=null params={event=firstSearcher&q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false} hits=0 status=0 QTime=163 
-3307 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
-3307 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@4cf7164a[blacklight-core] main{StandardDirectoryReader(segments_1:1:nrt)}
-11012 [qtp1077532271-12] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1469552315547&wt=json} status=0 QTime=2 
-11052 [qtp1077532271-12] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1469552315590&wt=json} status=0 QTime=8 
-28766 [qtp1077532271-12] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.menu-top.html [/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/conf/admin-extra.menu-top.html]
-28768 [qtp1077532271-12] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&_=1469552333262&contentType=text/html;charset%3Dutf-8} status=404 QTime=50 
-28773 [qtp1077532271-15] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.menu-bottom.html [/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/conf/admin-extra.menu-bottom.html]
-28773 [qtp1077532271-15] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&_=1469552333263&contentType=text/html;charset%3Dutf-8} status=404 QTime=1 
-28806 [qtp1077532271-12] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/luke params={numTerms=0&_=1469552333346&show=index&wt=json} status=0 QTime=2 
-28819 [qtp1077532271-16] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1469552333353} status=0 QTime=3 
-28819 [qtp1077532271-19] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/ping params={action=status&_=1469552333354&wt=json} status=0 QTime=2 
-28828 [qtp1077532271-17] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/system params={_=1469552333351&wt=json} status=0 QTime=15 
-28839 [qtp1077532271-18] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
-28841 [qtp1077532271-18] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/replication params={command=details&_=1469552333350&wt=json} status=0 QTime=28 
-259097 [qtp1077532271-19] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1469552563638&wt=json} status=0 QTime=0 
-259132 [qtp1077532271-19] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1469552563671&wt=json} status=0 QTime=3 
-678366 [qtp1077532271-11] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=4 
-712557 [qtp1077532271-17] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=3 
-847543 [qtp1077532271-18] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=7 
-850491 [qtp1077532271-13] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&q=te&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=6 
-854820 [qtp1077532271-11] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=3 
-878260 [qtp1077532271-17] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update params={wt=ruby} {} 0 30
-878263 [qtp1077532271-18] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-878264 [qtp1077532271-18] INFO  org.apache.solr.update.UpdateHandler  – No uncommitted changes. Skipping IW.commit.
-878264 [qtp1077532271-18] INFO  org.apache.solr.core.SolrCore  – SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
-878264 [qtp1077532271-18] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
-878265 [qtp1077532271-18] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update params={wt=ruby} {commit=} 0 2
-887901 [qtp1077532271-12] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=5 
-890594 [qtp1077532271-16] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=3 
-893501 [qtp1077532271-19] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=2 
-895623 [qtp1077532271-15] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&q=te&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=6 
-897322 [qtp1077532271-13] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=3 
-912066 [qtp1077532271-11] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1469553216595&wt=json} status=0 QTime=0 
-912102 [qtp1077532271-11] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1469553216629&wt=json} status=0 QTime=3 
-914256 [qtp1077532271-11] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.menu-top.html [/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/conf/admin-extra.menu-top.html]
-914256 [qtp1077532271-11] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&_=1469553218782&contentType=text/html;charset%3Dutf-8} status=404 QTime=1 
-914269 [qtp1077532271-18] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.menu-bottom.html [/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/conf/admin-extra.menu-bottom.html]
-914275 [qtp1077532271-18] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&_=1469553218783&contentType=text/html;charset%3Dutf-8} status=404 QTime=6 
-914298 [qtp1077532271-16] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/luke params={numTerms=0&_=1469553218820&show=index&wt=json} status=0 QTime=0 
-914300 [qtp1077532271-11] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/replication params={command=details&_=1469553218823&wt=json} status=0 QTime=1 
-914304 [qtp1077532271-19] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1469553218826} status=0 QTime=0 
-914309 [qtp1077532271-18] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/ping params={action=status&_=1469553218827&wt=json} status=0 QTime=1 
-914315 [qtp1077532271-17] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/system params={_=1469553218825&wt=json} status=0 QTime=12 
-917805 [qtp1077532271-15] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=4 
-974371 [qtp1077532271-15] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=2 
-1338270 [qtp1077532271-13] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update params={wt=ruby} {} 0 0
-1338273 [qtp1077532271-12] INFO  org.apache.solr.update.UpdateHandler  – start commit{,optimize=false,openSearcher=true,waitSearcher=true,expungeDeletes=false,softCommit=false,prepareCommit=false}
-1338273 [qtp1077532271-12] INFO  org.apache.solr.update.UpdateHandler  – No uncommitted changes. Skipping IW.commit.
-1338273 [qtp1077532271-12] INFO  org.apache.solr.core.SolrCore  – SolrIndexSearcher has not changed - not re-opening: org.apache.solr.search.SolrIndexSearcher
-1338274 [qtp1077532271-12] INFO  org.apache.solr.update.UpdateHandler  – end_commit_flush
-1338274 [qtp1077532271-12] INFO  org.apache.solr.update.processor.LogUpdateProcessor  – [blacklight-core] webapp=/solr path=/update params={wt=ruby} {commit=} 0 2
-1345991 [qtp1077532271-19] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=2 
-1349168 [qtp1077532271-18] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.dc_creator_sm.facet.limit=9&f.dc_rights_s.facet.limit=9&facet=true&sort=score+desc,+dc_title_sort+asc&f.solr_year_i.facet.limit=11&f.dc_format_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&q.alt=*:*&f.dc_publisher_s.facet.limit=9&wt=ruby&rows=10&f.layer_geom_type_s.facet.limit=9&f.dct_spatial_sm.facet.limit=9&start=0&f.dc_subject_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&qt=search} hits=0 status=0 QTime=3 
-1352535 [qtp1077532271-17] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&_=1469553657052&wt=json} status=0 QTime=0 
-1352579 [qtp1077532271-17] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={_=1469553657099&wt=json} status=0 QTime=3 
-1352610 [qtp1077532271-14] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.menu-top.html [/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/conf/admin-extra.menu-top.html]
-1352611 [qtp1077532271-14] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&_=1469553657132&contentType=text/html;charset%3Dutf-8} status=404 QTime=1 
-1352611 [qtp1077532271-17] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.menu-bottom.html [/home/ubuntu/geo.lclark/jetty/solr/blacklight-core/conf/admin-extra.menu-bottom.html]
-1352612 [qtp1077532271-17] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&_=1469553657132&contentType=text/html;charset%3Dutf-8} status=404 QTime=1 
-1352638 [qtp1077532271-11] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/luke params={numTerms=0&_=1469553657158&show=index&wt=json} status=0 QTime=0 
-1352639 [qtp1077532271-17] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/replication params={command=details&_=1469553657162&wt=json} status=0 QTime=0 
-1352644 [qtp1077532271-13] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1469553657167} status=0 QTime=0 
-1352645 [qtp1077532271-16] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/ping params={action=status&_=1469553657167&wt=json} status=0 QTime=0 
-1352647 [qtp1077532271-14] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/system params={_=1469553657165&wt=json} status=0 QTime=5 
-2298556 [qtp1077532271-15] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=3 
-2314264 [qtp1077532271-12] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={wt=json} status=0 QTime=2 
+47   [main] INFO  org.eclipse.jetty.deploy.providers.ScanningAppProvider  – Deployment monitor /home/watzekdi/Documents/geo.lclark/jetty/contexts at interval 0
+56   [main] INFO  org.eclipse.jetty.deploy.DeploymentManager  – Deployable added: /home/watzekdi/Documents/geo.lclark/jetty/contexts/solr.xml
+317  [main] INFO  org.eclipse.jetty.webapp.WebInfConfiguration  – Extract jar:file:/home/watzekdi/Documents/geo.lclark/jetty/webapps/solr.war!/ to /home/watzekdi/Documents/geo.lclark/jetty/solr-webapp/webapp
+4307 [main] INFO  org.eclipse.jetty.webapp.StandardDescriptorProcessor  – NO JSP Support for /solr, did not find org.apache.jasper.servlet.JspServlet
+4552 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init()
+4596 [main] INFO  org.apache.solr.core.SolrResourceLoader  – JNDI not configured for solr (NoInitialContextEx)
+4598 [main] INFO  org.apache.solr.core.SolrResourceLoader  – using system property solr.solr.home: /home/watzekdi/Documents/geo.lclark/jetty/solr
+4600 [main] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/watzekdi/Documents/geo.lclark/jetty/solr/'
+4634 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/watzekdi/Documents/geo.lclark/jetty/solr/lib/solr-analysis-extras-4.10.3.jar' to classloader
+4636 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/watzekdi/Documents/geo.lclark/jetty/solr/lib/solr-langid-4.10.3.jar' to classloader
+4637 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/watzekdi/Documents/geo.lclark/jetty/solr/lib/contrib/' to classloader
+4638 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/watzekdi/Documents/geo.lclark/jetty/solr/lib/solr-clustering-4.10.3.jar' to classloader
+5369 [main] INFO  org.apache.solr.core.ConfigSolr  – Loading container configuration from /home/watzekdi/Documents/geo.lclark/jetty/solr/solr.xml
+5877 [main] INFO  org.apache.solr.core.CoresLocator  – Config-defined core root directory: /home/watzekdi/Documents/geo.lclark/jetty/solr
+5929 [main] INFO  org.apache.solr.core.CoreContainer  – New CoreContainer 1110031167
+5965 [main] INFO  org.apache.solr.core.CoreContainer  – Loading cores into CoreContainer [instanceDir=/home/watzekdi/Documents/geo.lclark/jetty/solr/]
+5965 [main] INFO  org.apache.solr.core.CoreContainer  – loading shared library: /home/watzekdi/Documents/geo.lclark/jetty/solr/lib
+5966 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/watzekdi/Documents/geo.lclark/jetty/solr/lib/solr-analysis-extras-4.10.3.jar' to classloader
+5967 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/watzekdi/Documents/geo.lclark/jetty/solr/lib/solr-langid-4.10.3.jar' to classloader
+5967 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/watzekdi/Documents/geo.lclark/jetty/solr/lib/contrib/' to classloader
+5967 [main] INFO  org.apache.solr.core.SolrResourceLoader  – Adding 'file:/home/watzekdi/Documents/geo.lclark/jetty/solr/lib/solr-clustering-4.10.3.jar' to classloader
+6083 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting socketTimeout to: 0
+6083 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting urlScheme to: null
+6097 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting connTimeout to: 0
+6108 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxConnectionsPerHost to: 20
+6109 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting corePoolSize to: 0
+6109 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maximumPoolSize to: 2147483647
+6109 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting maxThreadIdleTime to: 5
+6110 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting sizeOfQueue to: -1
+6110 [main] INFO  org.apache.solr.handler.component.HttpShardHandlerFactory  – Setting fairnessPolicy to: false
+7019 [main] INFO  org.apache.solr.update.UpdateShardHandler  – Creating UpdateShardHandler HTTP client with params: socketTimeout=0&connTimeout=0&retry=false
+7023 [main] INFO  org.apache.solr.logging.LogWatcher  – SLF4J impl is org.slf4j.impl.Log4jLoggerFactory
+7024 [main] INFO  org.apache.solr.logging.LogWatcher  – Registering Log Listener [Log4j (org.slf4j.impl.Log4jLoggerFactory)]
+7026 [main] INFO  org.apache.solr.core.CoreContainer  – Host Name: 
+7082 [main] INFO  org.apache.solr.core.CoresLocator  – Looking for core definitions underneath /home/watzekdi/Documents/geo.lclark/jetty/solr
+7133 [main] INFO  org.apache.solr.core.CoresLocator  – Found core blacklight-core in /home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/
+7314 [main] INFO  org.apache.solr.core.CoresLocator  – Found 1 core definitions
+7317 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrResourceLoader  – new SolrResourceLoader for directory: '/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/'
+7441 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrConfig  – Using Lucene MatchVersion: 4.7.0
+7696 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.Config  – Loaded SolrConfig: solrconfig.xml
+7801 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – Reading Solr Schema from /home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/conf/schema.xml
+7989 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – [blacklight-core] Schema name=geoblacklight-schema
+8372 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.schema.IndexSchema  – unique key field: uuid
+8506 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – Creating SolrCore 'blacklight-core' using configuration from instancedir /home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/
+8531 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – solr.NRTCachingDirectoryFactory
+8539 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Opening new SolrCore at /home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/, dataDir=/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/data/
+8539 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – JMX monitoring not detected for core: blacklight-core
+8543 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Added SolrEventListener for newSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=stanford}, {q=polygon}]}
+8544 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Added SolrEventListener for firstSearcher: org.apache.solr.core.QuerySenderListener{queries=[{q=static firstSearcher warming in solrconfig.xml}]}
+8573 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/data
+8584 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – New index directory detected: old=null new=/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/data/index/
+8585 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.SolrCore  – [blacklight-core] Solr index directory '/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/data/index' doesn't exist. Creating new index...
+8603 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CachingDirectoryFactory  – return new directory for /home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/data/index
+9002 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onCommit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/data/index lockFactory=NativeFSLockFactory@/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+9004 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+9094 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – no updateRequestProcessorChain defined as default, creating implicit default
+9104 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: org.apache.solr.handler.UpdateRequestHandler
+9104 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json: org.apache.solr.handler.UpdateRequestHandler
+9104 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/csv: org.apache.solr.handler.UpdateRequestHandler
+9105 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update/json/docs: org.apache.solr.handler.UpdateRequestHandler
+9109 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /get: solr.RealTimeGetHandler
+9109 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.ReplicationHandler
+9110 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /replication: solr.ReplicationHandler
+9114 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /search: solr.SearchHandler
+9115 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /select: solr.SearchHandler
+9117 [coreLoadExecutor-5-thread-1] WARN  org.apache.solr.core.RequestHandlers  – Multiple requestHandler registered to the same name: /update ignoring: org.apache.solr.handler.UpdateRequestHandler
+9117 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /update: solr.UpdateRequestHandler
+9119 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/: solr.admin.AdminHandlers
+9122 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /admin/ping: solr.PingRequestHandler
+9122 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – adding lazy requestHandler: solr.FieldAnalysisRequestHandler
+9122 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.RequestHandlers  – created /analysis/field: solr.FieldAnalysisRequestHandler
+9142 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+9145 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+9147 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+9149 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+9151 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.handler.loader.XMLLoader  – xsltCacheLifetimeSeconds=60
+9173 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Hard AutoCommit: if uncommited for 15000ms; 
+9174 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – Soft AutoCommit: disabled
+9185 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – SolrDeletionPolicy.onInit: commits: num=1
+	commit{dir=NRTCachingDirectory(MMapDirectory@/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/data/index lockFactory=NativeFSLockFactory@/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/data/index; maxCacheMB=48.0 maxMergeSizeMB=4.0),segFN=segments_1,generation=1}
+9185 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.SolrCore  – newest commit generation = 1
+9195 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.search.SolrIndexSearcher  – Opening Searcher@4e5f4ea4[blacklight-core] main
+9218 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – File-based storage initialized to use dir: /home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/conf
+9219 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing RestManager with initArgs: {storageDir=/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/conf}
+9230 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Reading _rest_managed.json using file:dir=/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/conf
+9241 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResourceStorage  – Loaded LinkedHashMap at path _rest_managed.json using file:dir=/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/conf
+9241 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.ManagedResource  – Loaded initArgs {} for /rest/managed
+9241 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.rest.RestManager  – Initializing 0 registered ManagedResources
+9261 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener sending requests to Searcher@4e5f4ea4[blacklight-core] main{StandardDirectoryReader(segments_1:1:nrt)}
+9272 [coreLoadExecutor-5-thread-1] INFO  org.apache.solr.core.CoreContainer  – registering core: blacklight-core
+9275 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – user.dir=/home/watzekdi/Documents/geo.lclark/jetty
+9276 [main] INFO  org.apache.solr.servlet.SolrDispatchFilter  – SolrDispatchFilter.init() done
+9388 [main] INFO  org.eclipse.jetty.server.AbstractConnector  – Started SocketConnector@0.0.0.0:8983
+9540 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=dct_isPartOf_sm,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+9562 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=dct_spatial_sm,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+9563 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=dc_creator_sm,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+9563 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – UnInverted multi-valued field {field=dc_subject_sm,memSize=4288,tindexSize=0,time=0,phase1=0,nTerms=0,bigTerms=0,termInstances=0,uses=0}
+9585 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=null path=null params={q=static+firstSearcher+warming+in+solrconfig.xml&distrib=false&event=firstSearcher} hits=0 status=0 QTime=313 
+9586 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – QuerySenderListener done.
+9587 [searcherExecutor-6-thread-1] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] Registered new searcher Searcher@4e5f4ea4[blacklight-core] main{StandardDirectoryReader(segments_1:1:nrt)}
+15754 [qtp1734853116-17] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1469663651240} status=0 QTime=3 
+15992 [qtp1734853116-17] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={wt=json&_=1469663651335} status=0 QTime=147 
+69901 [qtp1734853116-14] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1469663705391} status=0 QTime=0 
+70229 [qtp1734853116-14] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={wt=json&_=1469663705643} status=0 QTime=73 
+71421 [qtp1734853116-14] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={wt=json&_=1469663706914} status=0 QTime=4 
+71634 [qtp1734853116-17] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={wt=json&_=1469663707089} status=0 QTime=1 
+608478 [qtp1734853116-10] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1469664243971} status=0 QTime=0 
+608599 [qtp1734853116-10] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={wt=json&_=1469664244087} status=0 QTime=8 
+618758 [qtp1734853116-10] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/properties params={wt=json&_=1469664254252} status=0 QTime=0 
+619848 [qtp1734853116-10] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={wt=json&_=1469664255343} status=0 QTime=1 
+619906 [qtp1734853116-10] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={wt=json&_=1469664255401} status=0 QTime=1 
+829842 [qtp1734853116-13] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/cores params={indexInfo=false&wt=json&_=1469664465337} status=0 QTime=0 
+829957 [qtp1734853116-13] INFO  org.apache.solr.servlet.SolrDispatchFilter  – [admin] webapp=null path=/admin/info/system params={wt=json&_=1469664465446} status=0 QTime=7 
+836141 [qtp1734853116-15] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.menu-bottom.html [/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/conf/admin-extra.menu-bottom.html]
+836143 [qtp1734853116-15] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-bottom.html&contentType=text/html;charset%3Dutf-8&_=1469664471602} status=404 QTime=28 
+836144 [qtp1734853116-13] ERROR org.apache.solr.handler.admin.ShowFileRequestHandler  – Can not find: admin-extra.menu-top.html [/home/watzekdi/Documents/geo.lclark/jetty/solr/blacklight-core/conf/admin-extra.menu-top.html]
+836148 [qtp1734853116-13] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.menu-top.html&contentType=text/html;charset%3Dutf-8&_=1469664471601} status=404 QTime=42 
+836176 [qtp1734853116-15] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/luke params={show=index&numTerms=0&wt=json&_=1469664471631} status=0 QTime=6 
+836187 [qtp1734853116-19] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/system params={wt=json&_=1469664471661} status=0 QTime=16 
+836196 [qtp1734853116-19] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/file/ params={file=admin-extra.html&_=1469664471671} status=0 QTime=1 
+836207 [qtp1734853116-15] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/admin/ping params={action=status&wt=json&_=1469664471683} status=0 QTime=1 
+836214 [qtp1734853116-13] INFO  org.apache.solr.handler.ReplicationHandler  – Commits will be reserved for  10000
+836219 [qtp1734853116-13] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/replication params={wt=json&command=details&_=1469664471651} status=0 QTime=51 
+979652 [qtp1734853116-17] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.layer_geom_type_s.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&q.alt=*:*&qt=search&f.dc_rights_s.facet.limit=9&start=0&sort=score+desc,+dc_title_sort+asc&rows=10&f.solr_year_i.facet.limit=11&f.dc_publisher_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&f.dc_format_s.facet.limit=9&wt=ruby&facet=true&f.dc_creator_sm.facet.limit=9&f.dc_subject_sm.facet.limit=9&f.dct_spatial_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9} hits=0 status=0 QTime=11 
+992510 [qtp1734853116-14] INFO  org.apache.solr.core.SolrCore  – [blacklight-core] webapp=/solr path=/select params={f.layer_geom_type_s.facet.limit=9&facet.field=dct_provenance_s&facet.field=dc_creator_sm&facet.field=dc_publisher_s&facet.field=dc_subject_sm&facet.field=dct_spatial_sm&facet.field=dct_isPartOf_sm&facet.field=solr_year_i&facet.field=dc_rights_s&facet.field=layer_geom_type_s&facet.field=dc_format_s&q.alt=*:*&qt=search&f.dc_rights_s.facet.limit=9&start=0&sort=score+desc,+dc_title_sort+asc&rows=10&f.solr_year_i.facet.limit=11&f.dc_publisher_s.facet.limit=9&f.dct_provenance_s.facet.limit=9&f.dc_format_s.facet.limit=9&wt=ruby&facet=true&f.dc_creator_sm.facet.limit=9&f.dc_subject_sm.facet.limit=9&f.dct_spatial_sm.facet.limit=9&f.dct_isPartOf_sm.facet.limit=9} hits=0 status=0 QTime=5 
