@@ -20,6 +20,7 @@
     <%= opensearch_description_tag application_name, opensearch_catalog_url(:format => 'xml') %>
     <%= favicon_link_tag 'favicon.ico' %>
     <%= stylesheet_link_tag "application", media: "all" %>
+    <%= stylesheet_link_tag "http://fonts.googleapis.com/css?family=Fjord+One" %>
     <%= javascript_include_tag "application" %>
     <%= csrf_meta_tags %>
     <%= content_for(:head) %>
@@ -31,20 +32,19 @@
 
   </head>
   <body class="<%= render_body_class %>">
-  <%= render :partial => 'shared/header_navbar' %>
 
-  <%= render partial: 'shared/ajax_modal' %>
-
-  <div id="main-container" class="container">
-    <%= content_tag :h1, application_name, class: 'sr-only application-heading' %>
-
-    <%= render :partial=>'/flash_msg', layout: 'shared/flash_messages' %>
-
-    <div class="row">
-      <%= yield %>
+    <div id="wrap">
+      <%= render :partial => 'shared/header_navbar' %>
+      <%= render partial: 'shared/ajax_modal' %>
+      <div id="main-container" class="container">
+        <%= content_tag :h1, application_name, class: 'sr-only application-heading' %>
+        <%= render :partial=>'/flash_msg', layout: 'shared/flash_messages' %>
+        <div class="row">
+          <%= yield %>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <%= render :partial => 'shared/footer' %>
+  <%= render 'shared/lc_footer' %>
   </body>
 </html>
