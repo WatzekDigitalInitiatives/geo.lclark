@@ -18,4 +18,4 @@
 /jetty/jettwrapper.log
 /jetty/logs/*
 public/assets/**
-public/submit/*
+public/submit
