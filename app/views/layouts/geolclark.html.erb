@@ -34,7 +34,7 @@
   <body class="<%= render_body_class %>">
 
     <div id="wrap">
-      <%= render :partial => 'shared/header_navbar' %>
+      <%= render 'shared/header_navbar' %>
       <%= render partial: 'shared/ajax_modal' %>
       <div id="main-container" class="container">
         <%= content_tag :h1, application_name, class: 'sr-only application-heading' %>
