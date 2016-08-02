@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   root to: "catalog#index"
   blacklight_for :catalog
   devise_for :users
+
+  get "/geoserver" => redirect("http://52.42.227.39/web/")
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
