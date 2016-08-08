@@ -19,3 +19,4 @@
 /jetty/logs/*
 public/assets/**
 public/submit
+/spec/fixtures/solr_documents/*
