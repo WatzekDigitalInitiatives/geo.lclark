@@ -12,7 +12,7 @@ gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '~> 4.1.0'
 # See https://github.com/rails/execjs#readme for more supported runtimes
-gem 'therubyracer', platforms: :ruby
+# gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -22,9 +22,6 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
-
-#Geo Combine gem to pull geospatial metadata of other institutions
-gem 'geo_combine'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
@@ -50,8 +47,9 @@ end
 
 
 gem 'blacklight'
-gem 'geoblacklight'
-gem 'jettywrapper'
+gem 'geoblacklight', '~> 1.1.0'
 gem 'rsolr', '~> 1.0.6'
+gem 'blacklight-marc'
 gem 'devise'
 gem 'devise-guests', '~> 0.3'
+gem 'solr_wrapper'

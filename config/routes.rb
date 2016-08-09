@@ -1,9 +1,28 @@
 Rails.application.routes.draw do
   root to: "catalog#index"
-  blacklight_for :catalog
-  devise_for :users
 
-  get "/geoserver" => redirect("http://52.11.226.237:8080/geoserver")
+  mount Blacklight::Engine => '/'
+
+  concern :searchable, Blacklight::Routes::Searchable.new
+  concern :exportable, Blacklight::Routes::Exportable.new
+
+  resource :catalog, only: [:index], controller: 'catalog' do
+    concerns :searchable
+  end
+
+  resources :solr_documents, only: [:show], controller: 'catalog' do
+    concerns :exportable
+  end
+
+  resources :bookmarks do
+    concerns :exportable
+
+    collection do
+      delete 'clear'
+    end
+  end
+  
+  devise_for :users
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
