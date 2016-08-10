@@ -47,7 +47,7 @@ end
 
 
 gem 'blacklight'
-gem 'geoblacklight', '~> 1.1.0', :git => 'https://github.com/geoblacklight/geoblacklight.git', :branch => 'wms-params-fix'
+gem 'geoblacklight', '~> 1.1.0', :git => 'https://github.com/geoblacklight/geoblacklight.git'
 gem 'rsolr', '~> 1.0.6'
 gem 'blacklight-marc'
 gem 'devise'

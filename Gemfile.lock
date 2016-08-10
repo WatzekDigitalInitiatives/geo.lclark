@@ -1,7 +1,6 @@
 GIT
   remote: https://github.com/geoblacklight/geoblacklight.git
-  revision: 1ce58f84ee8bf332e6252af7b5158e77afaa54ff
-  branch: wms-params-fix
+  revision: ce20b22f768d345def1ef78eff2b84f4c5b6e31b
   specs:
     geoblacklight (1.1.0)
       blacklight (~> 6.3)
