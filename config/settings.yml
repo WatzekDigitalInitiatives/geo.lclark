@@ -62,3 +62,26 @@ WMS_PARAMS:
   :SRS: 'EPSG:4326'
   :EXCEPTIONS: 'application/json'
   :INFO_FORMAT: 'text/html'
+
+# Settings for leaflet
+OPACITY_CONTROL: &opacity_control
+  CONTROLS:
+    - 'Opacity'
+
+LEAFLET:
+  MAP:
+  LAYERS:
+  VIEWERS:
+    WMS:
+      <<: *opacity_control
+      CONTROLS:
+          - 'Opacity'
+          - 'Fullscreen'
+    TILEDMAPLAYER:
+      <<: *opacity_control
+    FEATURELAYER:
+      <<: *opacity_control
+    DYNAMICMAPLAYER:
+      <<: *opacity_control
+    IMAGEMAPLAYER:
+      <<: *opacity_control
