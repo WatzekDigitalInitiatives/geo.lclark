@@ -15,8 +15,10 @@
 /log/*
 !/log/.keep
 /tmp
-/jetty/jettwrapper.log
-/jetty/logs/*
+/jetty/*
 public/assets/**
 public/submit
 /spec/fixtures/solr_documents/*
+
+# Secrets
+/config/secrets.yml
