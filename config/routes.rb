@@ -1,16 +1,37 @@
 Rails.application.routes.draw do
-  root to: "catalog#index"
+  devise_for :users
+  resources :suggest, only: :index, defaults: { format: 'json' }
 
+  concern :gbl_exportable, Geoblacklight::Routes::Exportable.new
+  resources :solr_documents, only: [:show], controller: 'catalog' do
+    concerns :gbl_exportable
+  end
+
+  concern :gbl_wms, Geoblacklight::Routes::Wms.new
+  namespace :wms do
+    concerns :gbl_wms
+  end
+
+  concern :gbl_downloadable, Geoblacklight::Routes::Downloadable.new
+  namespace :download do
+    concerns :gbl_downloadable
+  end
+
+  resources :download, only: [:show]
+
+  mount Geoblacklight::Engine => 'geoblacklight'
   mount Blacklight::Engine => '/'
 
+  root to: "catalog#index"
   concern :searchable, Blacklight::Routes::Searchable.new
-  concern :exportable, Blacklight::Routes::Exportable.new
 
-  resource :catalog, only: [:index], controller: 'catalog' do
+  resource :catalog, only: [:index], as: 'catalog', path: '/catalog', controller: 'catalog' do
     concerns :searchable
   end
 
-  resources :solr_documents, only: [:show], controller: 'catalog' do
+  concern :exportable, Blacklight::Routes::Exportable.new
+
+  resources :solr_documents, only: [:show], path: '/catalog', controller: 'catalog' do
     concerns :exportable
   end
 
@@ -21,9 +42,8 @@ Rails.application.routes.draw do
       delete 'clear'
     end
   end
-  
-  devise_for :users
-  # The priority is based upon order of creation: first created -> highest priority.
+
+    # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

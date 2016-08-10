@@ -1,3 +1,19 @@
+GIT
+  remote: https://github.com/geoblacklight/geoblacklight.git
+  revision: 1ce58f84ee8bf332e6252af7b5158e77afaa54ff
+  branch: wms-params-fix
+  specs:
+    geoblacklight (1.1.0)
+      blacklight (~> 6.3)
+      coderay
+      config
+      deprecation
+      faraday
+      font-awesome-rails
+      geoblacklight-icons (>= 0.2)
+      leaflet-rails (~> 0.7.3)
+      rails (>= 4.2.0, < 6)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -94,16 +110,6 @@ GEM
       multipart-post (>= 1.2, < 3)
     font-awesome-rails (4.6.3.1)
       railties (>= 3.2, < 5.1)
-    geoblacklight (1.1.0)
-      blacklight (~> 6.3)
-      coderay
-      config
-      deprecation
-      faraday
-      font-awesome-rails
-      geoblacklight-icons (>= 0.2)
-      leaflet-rails (~> 0.7.3)
-      rails (>= 4.2.0, < 6)
     geoblacklight-icons (0.3.0)
     globalid (0.3.7)
       activesupport (>= 4.1.0)
@@ -250,7 +256,7 @@ DEPENDENCIES
   coffee-rails (~> 4.1.0)
   devise
   devise-guests (~> 0.3)
-  geoblacklight (~> 1.1.0)
+  geoblacklight (~> 1.1.0)!
   jbuilder (~> 2.0)
   jquery-rails
   rails (= 4.2.6)
