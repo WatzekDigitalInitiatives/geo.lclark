@@ -1,0 +1,14 @@
+.leaflet-container {
+  // Needed to overwrite a font set by Leaflet-Rails
+  font-family: 'Source Sans Pro', sans-serif;
+  color: $brand-primary;
+}
+
+.leaflet-overlay-pane g path {
+  fill: $brand-primary;
+  stroke: $brand-primary;
+}
+.leaflet-overlay-pane{
+  fill: $brand-primary;
+  stroke: $brand-primary;
+}

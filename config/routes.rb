@@ -1,10 +1,49 @@
 Rails.application.routes.draw do
-  root to: "catalog#index"
-  blacklight_for :catalog
   devise_for :users
+  resources :suggest, only: :index, defaults: { format: 'json' }
 
-  get "/geoserver" => redirect("http://52.11.226.237:8080/geoserver")
-  # The priority is based upon order of creation: first created -> highest priority.
+  concern :gbl_exportable, Geoblacklight::Routes::Exportable.new
+  resources :solr_documents, only: [:show], controller: 'catalog' do
+    concerns :gbl_exportable
+  end
+
+  concern :gbl_wms, Geoblacklight::Routes::Wms.new
+  namespace :wms do
+    concerns :gbl_wms
+  end
+
+  concern :gbl_downloadable, Geoblacklight::Routes::Downloadable.new
+  namespace :download do
+    concerns :gbl_downloadable
+  end
+
+  resources :download, only: [:show]
+
+  mount Geoblacklight::Engine => 'geoblacklight'
+  mount Blacklight::Engine => '/'
+
+  root to: "catalog#index"
+  concern :searchable, Blacklight::Routes::Searchable.new
+
+  resource :catalog, only: [:index], as: 'catalog', path: '/catalog', controller: 'catalog' do
+    concerns :searchable
+  end
+
+  concern :exportable, Blacklight::Routes::Exportable.new
+
+  resources :solr_documents, only: [:show], path: '/catalog', controller: 'catalog' do
+    concerns :exportable
+  end
+
+  resources :bookmarks do
+    concerns :exportable
+
+    collection do
+      delete 'clear'
+    end
+  end
+
+    # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"

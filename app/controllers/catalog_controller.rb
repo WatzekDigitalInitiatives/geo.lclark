@@ -28,7 +28,7 @@ class CatalogController < ApplicationController
     # config.index.record_display_type = 'format'
 
     config.index.title_field = 'dc_title_s'
-
+    config.index.document_presenter_class = Geoblacklight::DocumentPresenter
     # solr field configuration for document/show views
 
     config.show.display_type_field = 'format'
@@ -202,6 +202,10 @@ class CatalogController < ApplicationController
     config.add_sort_field 'dc_publisher_sort asc, dc_title_sort asc', :label => 'publisher'
     config.add_sort_field 'dc_title_sort asc', :label => 'title'
 
+    # Configuration for autocomplete suggestor
+    config.autocomplete_enabled = true
+    config.autocomplete_path = 'suggest'
+
     # If there are more than this many search results, no spelling ("did you
     # mean") suggestion is offered.
     config.spell_max = 5
@@ -218,7 +222,7 @@ class CatalogController < ApplicationController
     # 'mapquest' http://developer.mapquest.com/web/products/open/map
     # 'positron' http://cartodb.com/basemaps/
     # 'darkMatter' http://cartodb.com/basemaps/
-    config.basemap_provider = 'positron'
+    config.basemap_provider = 'darkMatter'
   end
 
 
