@@ -43,6 +43,8 @@ Rails.application.routes.draw do
     end
   end
 
+  get "/geoserver" => redirect("http://52.11.226.237:8080/geoserver")
+
     # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
