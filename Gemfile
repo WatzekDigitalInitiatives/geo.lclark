@@ -48,7 +48,8 @@ end
 
 
 gem 'blacklight'
-gem 'geoblacklight', '~> 1.1.2'
+gem 'geoblacklight'
+gem 'geoblacklight-icons'
 gem 'rsolr', '~> 1.0.6'
 gem 'blacklight-marc'
 gem 'devise'
